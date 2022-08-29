@@ -1,2 +1,2 @@
 # exercise_app
-live: kiipfit.netlify.app
+live: https://kiipfit.netlify.app
