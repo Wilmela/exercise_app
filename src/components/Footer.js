@@ -1,19 +1,19 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
-import Logo from "../assets/images/Logo-1.png";
 
 const Footer = () => {
   return (
     <Box
       borderColor="primary"
       bgColor="primary"
+      color="#355753"
       width="100%"
       display="flex"
       justifyContent="center"
       alignItems="center"
       px="1rem"
-      py='2rem'
+      py="2rem"
     >
       <Typography variant="h5">Made with ❤️ by Mela</Typography>
     </Box>

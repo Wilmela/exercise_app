@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@500;700;900&display=swap');
+
 body {
-  font-family: "Josefin Sans";
+  font-family: 'Poppins', "Josefin Sans";
   background-color: #f2f6e7;
 }
 
@@ -10,7 +12,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 5px;
 }
 
 .right-arrow,
@@ -63,7 +65,8 @@ body {
   height: 445px;
   background: #fff;
   border-top: 4px solid #ff2625;
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -100,6 +103,7 @@ body {
   width: 350px;
   height: 381px;
   text-decoration: none;
+  padding-right: 20px;
 }
 @media screen and (max-width: 400px) {
   .logo{
@@ -127,7 +131,7 @@ body {
   }
 
   .exercise-video {
-    width: 320px;
+    width: 300px;
     height: 300px;
   }
 }

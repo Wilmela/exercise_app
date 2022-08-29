@@ -1,14 +1,16 @@
 import React from "react";
 import { Box, Typography, Stack } from "@mui/material";
 
-const ExerciseVideos = ({  exerciseVideos, name}) => {
-
-   if(!exerciseVideos.length) return 'Loading...'
+const ExerciseVideos = ({ exerciseVideos, name }) => {
+  if (!exerciseVideos.length) return "Loading...";
   return (
-    <Box sx={{ marginTop: { lg: "200px", xs: "20px" } }} p="20px">
+    <Box sx={{ marginTop: { lg: "200px", xs: "20px" } }} p="20px" >
       <Typography variant="h4" mb="36px">
         Watch{" "}
-        <span style={{ color: "#ff2625", textTransform: "capitalize" }}> {name} </span>{" "}
+        <span style={{ color: "#ff2625", textTransform: "capitalize" }}>
+          {" "}
+          {name}{" "}
+        </span>{" "}
         exercise videos
       </Typography>
 
@@ -17,7 +19,7 @@ const ExerciseVideos = ({  exerciseVideos, name}) => {
         flexWrap="wrap"
         alignItems="center"
         sx={{
-          flexDirection: {lg: "row" },
+          flexDirection: { lg: "row" },
           gap: { lg: "110px", xs: "0" },
         }}
       >
@@ -32,7 +34,7 @@ const ExerciseVideos = ({  exerciseVideos, name}) => {
             <img src={item.video.thumbnails[0].url} alt={item.video.title} />
             <Box>
               <Typography variant="h5">{item.video.title}</Typography>
-              <Typography variant="h6">{item.video.channelName}</Typography>
+              <Typography variant="h6">{item.video?.channelName}</Typography>
             </Box>
           </a>
         ))}

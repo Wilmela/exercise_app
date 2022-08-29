@@ -41,29 +41,38 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   return (
     <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
       <Typography
-        fontWeight="700"
-        sx={{ fontSize: { lg: "44px", xs: "30px" } }}
+        color="#355753"
+        fontWeight="500"
+        sx={{ fontSize: { lg: "44px", xs: "40px" } }}
         mb="50px"
         textAlign="center"
       >
-        Awesome Exercises You Should Know
+        Find Exercises
       </Typography>
       <Box position="relative" mb="72px">
         <TextField
-          height="76px" value={search} placeholder="Search exercises" type="text"
+          height="76px"
+          value={search}
+          placeholder="Search exercises"
+          type="text"
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
           sx={{
             input: { fontWeight: "700px", border: "none", borderRadius: "4px" },
-            width: { lg: "800px", xs: "350px" },
+            width: { lg: "800px", xs: "300px" },
             backgroundColor: "#fff ",
           }}
         />
         <Button
           className="search-btn"
           sx={{
-            backgroundColor: "#9D302F", color: "#fff", textTransform: "none",
-            width: { lg: "175px", xs: "80px" }, fontSize: { lg: "20px", xs: "14px" },
-            height: " 56px", position: "absolute", right: "0",
+            backgroundColor: "#9D302F",
+            color: "#fff",
+            textTransform: "none",
+            width: { lg: "175px", xs: "80px" },
+            fontSize: { lg: "20px", xs: "14px" },
+            height: " 56px",
+            position: "absolute",
+            right: "0",
           }}
           onClick={handleSearch}
         >

@@ -10,7 +10,7 @@ import ExerciseDetail from "./components/pages/ExerciseDetail";
 
 const App = () => {
   return (
-    <Box width="100%">
+    <Box width="100%" sx={{overFlow:'hidden'}}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

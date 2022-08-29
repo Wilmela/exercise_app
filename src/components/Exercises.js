@@ -41,14 +41,22 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   }, [bodyPart]);
 
   return (
-    <Box id="exercises" sx={{ mt: { lg: "110px" } }} mt="50px" p="20px">
+    <Box
+      id="exercises"
+      sx={{ mt: { lg: "110px" } }}
+      mt="50px"
+      p="20px"
+      color="#355753"
+    >
       <Typography variant="h3" mb="46px">
-        Showing Results
+        Exercises
       </Typography>
 
       <Stack
-        direction="row" sx={{ lg: "110px", xs: "50px" }}
-        flexWrap="wrap" justifyContent="center"
+        direction="row"
+        sx={{ lg: "110px", xs: "50px" }}
+        flexWrap="wrap"
+        justifyContent="center"
       >
         {currentExercises.map((exercise, i) => (
           <ExerciseCard key={i} exercise={exercise} />
@@ -68,7 +76,8 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           />
         )}
       </Stack>
-    </Box> );
+    </Box>
+  );
 };
 
 export default Exercises;
